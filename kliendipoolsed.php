@@ -34,5 +34,19 @@
         $(this).attr("src","img/cute.dog.jpg")
     })
 </script>
+
+<!--Muuda taustapilti nuppudega-->
+
+<button class="varv">Red</button>
+<button class="varv">Green</button>
+<button class="varv">Blue</button>
+
+<script>
+    $(".varv").click(function() {
+        var element = $(this);
+        $("body").css("background-color", element.text());
+    });
+</script>
+
 </body>
 </html>
