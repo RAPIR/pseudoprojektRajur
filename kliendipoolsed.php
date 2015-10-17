@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="theme.css">
     <title>Document</title>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
