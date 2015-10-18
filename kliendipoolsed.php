@@ -47,7 +47,6 @@
         $("body").css("background-color", element.text());
     });
 
-
 <!--keela ära parem hiireklõps-->
 
     $(document).ready(function() {
