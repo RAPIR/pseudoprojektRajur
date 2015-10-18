@@ -46,6 +46,16 @@
         var element = $(this);
         $("body").css("background-color", element.text());
     });
+
+
+<!--keela ära parem hiireklõps-->
+
+    $(document).ready(function() {
+        $(document).on("contextmenu",function(){
+            return false;
+        });
+    })
+
 </script>
 
 </body>
