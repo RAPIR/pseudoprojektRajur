@@ -7,11 +7,18 @@
 <body>
 <h6>
     <?php
-    $eesnimi_algab_vokaaliga = false;
-    $age = 26;
-    $first='Rajur';
-    $last='Hint';
-    echo $first . " " . $last . " (" . $age . ")";
+
+    $isik = array(
+
+        'first' => 'Rajur',
+        'last' => 'Hint',
+        'age' => '(26)');
+
+    foreach($isik as $key=> $val){
+        echo $val."<br>";
+    }
+
+
 
     ?>
 </h6>
