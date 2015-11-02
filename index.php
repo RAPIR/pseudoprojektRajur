@@ -8,12 +8,9 @@
 
 <?php
 
-$page = isset($_GET['page']) ? $_GET['page'] : 'maasturi rattad';
+$page = (isset($_GET['page'])) ? $_GET['page'] : 'mahtu kahtu';
 
-if(file_exists("$page")) {
-    require "$page.php";
-}
-
+require "$page.php";
 ?>
 
 </body>
