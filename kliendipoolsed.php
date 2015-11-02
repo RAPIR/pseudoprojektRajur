@@ -66,5 +66,16 @@ $("#allow_click").click(function () {
 });
 </script>
 
+<button id="hide-cat">Toggle cat</button>
+<script>
+    $("#hide-cat").click(function () {
+        if ($('#pilt').is(':hidden')) {
+            $('#pilt').show();
+        } else {
+            $('#pilt').hide();
+        }
+    });
+</script>
+
 </body>
 </html>
