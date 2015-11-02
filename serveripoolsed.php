@@ -6,7 +6,11 @@
 </head>
 <body>
 <h6>
-    <p>tere maailm</p>
+    <?php
+        $first='Rajur';
+        $last='Hint';
+        echo "$first $last";
+    ?>
 </h6>
 </body>
 </html>
