@@ -8,11 +8,9 @@
 
 <?php
 
-$variable1 = 1.23;
-$variable2 = 2.34;
-$sum = $variable1 + $variable2;
-
-echo $sum;
+if (!empty($_GET['koer'])) {
+    echo "<p>".$_GET['koer']."</p>";
+}
 
 
 ?>
