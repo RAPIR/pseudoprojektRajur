@@ -9,7 +9,7 @@
 <?php
 
 if (!empty($_GET['koer'])) {
-    echo "<p>".$_GET['koer']."</p>";
+    echo " ".$_GET['koer']." ";
 }
 
 
