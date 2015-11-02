@@ -27,11 +27,11 @@
 <br>
 
 <!--Kassipilt koerapildiks jQuery-->
-<img alt="" src="img/cat.jpg" style="height: 185px; width: 198px" id= "pilt" />
+<img alt="" src="img/cat.jpg" style="height: 185px; width: 198px" id="pilt"/>
 
 <script>
     $("img[src='img/cat.jpg']").click(function () {
-        $(this).attr("src","img/cute.dog.jpg")
+        $(this).attr("src", "img/cute.dog.jpg")
     })
 </script>
 
@@ -42,19 +42,28 @@
 <button class="varv">Blue</button>
 
 <script>
-    $(".varv").click(function() {
+    $(".varv").click(function () {
         var element = $(this);
         $("body").css("background-color", element.text());
     });
 
 <!--keela ära parem hiireklõps-->
 
-    $(document).ready(function() {
-        $(document).on("contextmenu",function(){
-            return false;
-        });
-    })
+var enable = false;
+$(document).on("contextmenu",function(){
+return enable;
+});
 
+</script>
+
+<!-- luba parem hiireklikk-->
+
+<button onclick="myFunction" id="allow_click">Luba parem klõps</button>
+
+<script>
+$("#allow_click").click(function () {
+    $(document).unbind();
+});
 </script>
 
 </body>
