@@ -9,13 +9,11 @@
 <body>
 
 <!-- link--->
-
 <script language="javascript">
     function myFunction() {
         alert("Tere maailm!");
     }
 </script>
-
 <!-- alert-->
 
 <button onclick="myFunction()">Tere maailm!</button>
@@ -27,53 +25,24 @@
 <br>
 
 <!--Kassipilt koerapildiks jQuery-->
-<img alt="" src="img/cat.jpg" style="height: 185px; width: 198px" id="pilt"/>
+<img alt="" src="img/cat.jpg" style="height: 185px; width: 198px" id= "pilt" />
 
 <script>
     $("img[src='img/cat.jpg']").click(function () {
-        $(this).attr("src", "img/cute.dog.jpg")
+        $(this).attr("src","img/cute.dog.jpg")
     })
 </script>
 
 <!--Muuda taustapilti nuppudega-->
 
-<button class="varv">Red</button>
-<button class="varv">Green</button>
-<button class="varv">Blue</button>
+<button class="varv" id="Red">Red</button>
+<button class="varv" id="Green">Green</button>
+<button class="varv" id="Blue">Blue</button>
 
 <script>
-    $(".varv").click(function () {
+    $(".varv").click(function() {
         var element = $(this);
         $("body").css("background-color", element.text());
-    });
-
-<!--keela ära parem hiireklõps-->
-
-var enable = false;
-$(document).on("contextmenu",function(){
-return enable;
-});
-
-</script>
-
-<!-- luba parem hiireklikk-->
-
-<button onclick="myFunction" id="allow_click">Luba parem klõps</button>
-
-<script>
-$("#allow_click").click(function () {
-    $(document).unbind();
-});
-</script>
-
-<button id="hide-cat">Toggle cat</button>
-<script>
-    $("#hide-cat").click(function () {
-        if ($('#pilt').is(':hidden')) {
-            $('#pilt').show();
-        } else {
-            $('#pilt').hide();
-        }
     });
 </script>
 
